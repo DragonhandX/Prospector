@@ -79,7 +79,7 @@ public class Card : MonoBehaviour {
         }
     }
 
-    virtual public void OnMouseUpAsButtion()
+    virtual public void OnMouseUpAsButton()
     {
         print(name);
     }
