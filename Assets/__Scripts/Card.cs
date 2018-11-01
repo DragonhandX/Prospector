@@ -79,6 +79,11 @@ public class Card : MonoBehaviour {
         }
     }
 
+    virtual public void OnMouseUpAsButtion()
+    {
+        print(name);
+    }
+
 	// Update is called once per frame
 	void Update () {
 	

@@ -17,8 +17,15 @@ public class CardProspector : Card {
     public int layoutID;
     public SlotDef slotDef;
 
-	// Use this for initialization
-	void Start () {
+    public override void OnMouseUpAsButtion()
+    {
+        Prospector.S.CardClicked(this);
+
+        base.OnMouseUpAsButtion();
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

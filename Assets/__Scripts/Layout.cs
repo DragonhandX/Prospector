@@ -19,7 +19,7 @@ public class SlotDef
 public class Layout : MonoBehaviour {
     public PT_XMLReader xmlr;
     public PT_XMLHashtable xml;
-    public Vector2 mulitplier;
+    public Vector2 multiplier;
 
     public List<SlotDef> slotDefs;
     public SlotDef drawPile;
@@ -33,8 +33,8 @@ public class Layout : MonoBehaviour {
         xmlr.Parse(xmlText);
         xml = xmlr.xml["xml"][0];
 
-        mulitplier.x = float.Parse(xml["multiplier"][0].att("x"));
-        mulitplier.y = float.Parse(xml["multiplier"][0].att("y"));
+        multiplier.x = float.Parse(xml["multiplier"][0].att("x"));
+        multiplier.y = float.Parse(xml["multiplier"][0].att("y"));
 
         SlotDef tSD;
 
